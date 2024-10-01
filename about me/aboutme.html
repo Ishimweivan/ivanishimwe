@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#07001f, #320738, #bdbbbd);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .nav {
+            background-color: #320738;
+            padding: 15px;
+            width: 200px;
+            color: white;
+        }
+        .nav ul{
+            list-style-type: upper-alpha;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        .left-nav {
+            order: -1; /* Move left nav to the left */
+        }
+        .left-nav ul{
+            list-style-type: square;
+        }
+        #logo{
+            width: 50px;
+            height: 50px;
+            float: left;
+            border-radius: 50%;
+        }
+        .l{
+            float: left;
+            margin: 12px;
+            padding: 10px;
+            margin-left: 50px;
+            width: 120px;
+            cursor: pointer;
+            border: none;
+        }
+        .r{
+            float: right;
+            margin: 12px;
+            padding: 10px;
+            margin-left: 50px;
+            width: 120px;
+            cursor: pointer;
+            border: none;
+        }
+        button{
+            background: #320738;
+            color: white;
+            border-radius: 5px;
+            transition: 2s;
+        }
+        button:hover{
+            background: black;
+            color: white;
+        }
+        #search{
+            float: right;
+            margin: 12px;
+            padding: 10px;
+            margin-left: 50px;
+            width: 200px;
+            background: transparent;
+            color: #f4f4f4;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid skyblue;
+            outline: none;
+        }
+        .container .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+       .container .content img{
+            width: 30%;
+            height: 50%;
+        }
+         span{
+            color: darkred;
+            text-decoration: underline;
+         }
+         .sclback {
+            width: 100%;
+            border-collapse: collapse;
+         }
+         .sclback th,td{
+            text-align: left;
+            padding: 8px;
+         }
+         .sclback tr:nth-child(even){
+            background-color: rgb(0, 225, 255);
+            color: white;
+         }
+         .skills{
+            border-collapse: collapse;
+            width: 100%;
+         }
+         .skills .skh{
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid rgb(47, 255, 175);
+
+         }
+         .skills th{
+            background-color: green;
+            color: white;
+         }
+        .fa{
+            text-decoration: none;
+            color: black;
+        } 
+         .checked {
+  color: orange;
+
+}
+    </style>
+</head>
+<body>
+
+<header>
+<img src="ivah.jpg" alt="" id="log" style="width: 50px; height: 50px; border-radius: 50%;float: left;">
+  <button class="l">Home</button>
+ <button class="l">News</button>
+  <button class="l">About Us</button>
+  <button class="l">Contact Us</button>
+  <button class="r">Log Out</button>
+  <input type="text" name="search" id="search" placeholder="Search anything about me here">
+</header>
+
+<div class="container">
+    <nav class="nav left-nav">
+        <h2>My skills</h2>
+        <ul>
+            <li>Coding</li>
+            <li>Singing</li>
+            <li>Swimming</li>
+            <li>Guiding</li>
+            <li>Typing</li>
+            <li>Football</li>
+            <li>Basketball</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Hello I'm</h2>
+        <h1 style="color: skyblue;">Ishimwe Ivan </h1>
+        <h3 style="color: darkblue">A <span>Pro</span>grammer</h3>
+        <img src="ivah.jpg" alt="">
+        <table class="sclback">
+            <h1 style="color: white;">My school Background</h1>
+            <tr style="color: white;"><th>Year</th><th>Schools</th><th>Options</th></tr>
+            <tr><td>2011-2016</td><td>mubano I</td><td>----</td></tr>
+            <tr><td>2016-2017</td><td>GS mubano</td><td>----</td></tr>
+            <tr><td>2018-2020</td><td>Gs nyagatare </td><td>----</td></tr>
+            <tr><td>2020-2023</td><td>Aspej</td><td>NET</td></tr>
+        </table>
+        <table class="skills">
+            <h1 style="color: white;">My Skills</h1>
+            <tr><th class="skh">Skills</th><th class="skh">Ranking</th></tr>
+            <tr><td class="skh">Driving</td><td class="skh"><span class="fa fa-star checked"><span class="fa fa-star"></span></td></tr>
+            <tr><td class="skh">Coding</td><td class="skh"><span class="fa fa-star checked"><span class="fa fa-star "></span></td></tr>
+            <tr><td class="skh">Swimming</td><td class="skh"><span class="fa fa-star checked"><span class="fa fa-star "></span></td></tr>
+            <tr><td class="skh">Singing</td><td class="skh"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star "></span></td></tr>
+        </table>
+    </div>
+
+    <nav class="nav">
+        <h2>MY Favorites Food</h2>
+        <ul>
+            <li>Cassava</li>
+            <li>Maize</li>
+            <li>Rice</li>
+            <li>Meats</li>
+            <li>supergatte</li>
+            <li>Irish potatoes</li>
+            <li>Sweet potetoes</li>
+            
+        </ul>
+    </nav>
+</div>
+
+<footer>
+    <p>&copy;Ishimwe ivan 2024</p>
+</footer>
+
+</body>
+</html>
